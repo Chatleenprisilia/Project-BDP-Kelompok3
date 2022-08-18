@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!-- FONTS -->
+	<link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+	<meta charset="UTF-8">
+
+	<title>Weather App</title>
+	<title>Weather App Using Flask</title>
+
+	
+	<link rel="shortcut icon" href="../static/img/flask.png">
+	<link rel="stylesheet" href="../static/css/bootstrap.css">
+	<link rel="stylesheet" href="../static/css/jquery.fullPage.css">
+	<link rel="stylesheet" href="../static/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../static/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="../static/css/owl.carousel.css">
+
+	<link rel="stylesheet" href="../static/css/glitch.css">
+
+	<link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body class="gradient-bg">
+
+<div class="space"></div>
+
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- HEADER -->
+		<header class="site-header">
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-xs-4">
+						<a href="index.html" class="no-line logotype">dts2022</a>
+					</div>
+					
+
+				</div>
+			</div>
+			
+		</header>
+		<!-- /HEADER -->
+
+		<!-- CONTENT -->
+		<section class="site-content">
+
+			<div id="fullpage" class="fullpage-wrapper">
+
+				<div class="all-section">
+
+					<div class="sections" data-title="Home">
+
+						<div class="section-content">
+							<div class="section-wrap">
+
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-12 text-center">
+
+											<!-- TIMER -->
+											<div class="glitch-wrap glitch" data-time="">
+
+												<div class="fadein">
+													<div class="glitch-clock is-off">
+														<div class="glitch-time">
+															<div class="glitch-before">
+																<div>Weather App</div>	
+															</div>
+															<div class="glitch-content">
+																<div>Weather App</div>	
+															</div>
+															<div class="glitch-after">
+																<div>Weather App</div>	
+															</div>
+														</div>
+													</div>
+													
+												</div>
+
+											</div>
+											<!-- /TIMER -->
+
+											
+
+										</div><!-- col-xs-12 -->
+									</div><!-- row -->
+								</div><!-- container -->
+
+							</div><!-- section-wrap -->
+						</div><!-- section-content -->
+
+					</div>
+
+
+					<div class="sections" data-title="Notify me">
+
+						<div class="section-content">
+							<div class="section-wrap">
+
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-12 text-center">
+
+											<div class="notyfy-me border-gradient">
+												<h3>Pilih Kota</h3>
+												
+												<!-- / Subscription form -->
+
+												<form action="#" class="under-construction form-styler" method="post" role="form" data-toggle="validator">
+													<div class="btn-group" role="group" aria-label="...">
+														
+													  
+														<div class="btn-group" role="group">
+														  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																Kota
+															<span class="caret"></span>
+														  </button>
+														  <ul id="city" name="city" class="dropdown-menu">
+															<li><a href="#">Manado</a></li>
+															<li><a href="#">Bitung</a></li>
+															<li><a href="#">Kotamobagu</a></li>
+															<li><a href="#">Tomohon</a></li>
+														  </ul>
+														</div>
+													  </div>
+
+													
+													<span class="form-message"></span>
+														<p><b>{{kota[0]}}</b></p>
+														<p><b>Latitude : {{kota[1]}}</b></p>
+														<p><b>Longitude : {{kota[2]}}</b></p>
+														<p><b>Temperature: {{cuaca[0]}} Celsius</b></p>
+														<p><b>Humidity : {{cuaca[1]}}%</b></p>
+														<p><b>Pressure : {{cuaca[2]}} hPa</b></p>
+														<p><b>Wind Speed : {{cuaca[3]}} m/s</b></p>
+														<p><b>Rain 1h : {{cuaca[4]}} mm</b></p>
+														<p><b>Keterangan : {{cuaca[5]}}</b></p>
+												</form>
+
+												<!-- / Subscription form -->
+
+											</div>
+
+										</div><!-- col-xs-12 -->
+									</div><!-- row -->
+								</div><!-- container -->
+
+							</div><!-- section-wrap -->
+						</div><!-- section-content -->
+
+					</div>
+
+
+					
+
+
+
+					
+
+					<div class="sections contact-block" data-title="Contact">
+
+						<div class="section-content">
+							<div class="section-wrap">
+
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-12 text-center">
+
+											<h3>BDP UNSRAT 2020</h3>
+
+											<hr>
+
+											<div class="contact-me border-gradient border-gradient-hidden-xs ">
+
+												<div class="row m0">
+													<div class="col-sm-12 text-center">
+
+														<div class="contact-form border-gradient-visible-xs">
+
+															<h2> Weather App Using Flask</h2>
+															<p><b>Kelompok 3 BDP 1 </b></p>
+														</div>
+
+													</div>
+													
+												</div>
+
+												<div class="map-canvas"></div>
+												<div class="closed"></div>
+												
+											</div>
+										</div><!-- col-xs-12 -->
+									</div><!-- row -->
+								</div><!-- container -->
+
+							</div><!-- section-wrap -->
+						</div><!-- section-content -->
+
+					</div>
+
+				</div>
+
+			</div>
+			
+		</section>
+		<!-- /CONTENT -->
+		
+		<!-- FOOTER -->
+		<footer class="site-footer">
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-xs-12 text-center-xs text-right">
+						<div class="copyright">
+							©  bdp unsrat 2022 
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</footer>
+		<!-- /FOOTER -->
+
+	</div>
+	<!-- /WRAPPER -->
+
+	<script src="../static/js/jquery-1.11.1.min.js"></script>
+	<script src="../static/js/bootstrap.min.js"></script>
+	<script src="../static/js/jquery.fullPage.min.js"></script>
+	<script src="../static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../static/js/jquery.touchSwipe.min.js"></script>
+	<script src="../static/js/jquery.swiper.js"></script>
+	<script src="../static/js/owl.carousel.min.js"></script>
+	<script src="../static/js/jquery.inview.min.js"></script>
+	<script src="../static/js/jquery.placeholder.min.js"></script>
+	<script src="../static/js/jquery.ajaxchimp.min.js"></script>
+	<script src="../static/js/jquery.countdown.js"></script>
+
+	<script src="../static/js/jquery.circleSkills.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="../static/js/googlemap.js"></script>
+	<script src="../static/js/validator.min.js"></script>
+	<script src='../static/js/bootstrap-select.min.js'></script>
+
+	<script src="../static/js/main.js"></script>
+	
+	<div id="todown">
+		<a href="#"><div class="gos"></div><span></span></a>
+	</div>
+	
+</body>
+</html>
