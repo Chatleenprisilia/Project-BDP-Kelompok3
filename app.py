@@ -53,7 +53,7 @@ root.resizable(0,0)
 # Fungsi untuk menampilkan list kota berdasarkan pilihan provinsi
 def pilihProvinsi(event):
     provinsi = combo1.get()
-    listKota = daftarDaerah[provinsi]
+    listKota = daftarDaerah[provinsi]        
     combo2['values']=listKota
     combo2.set(listKota[0])
 
